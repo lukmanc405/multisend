@@ -1,7 +1,7 @@
 // Network configuration
-exports.RPC = "http://128.140.96.206:8545"; // ubah pakai RPC mu sendiri
-exports.ETHERSCAN = "https://testnet.airchains.io"; // gak perlu diubah
-exports.ETH = "0.00001";
+exports.RPC = "http://128.140.96.206:8545";
+exports.ETHERSCAN = "https://testnet.airchains.io";
+exports.ETH = "0.000001";
 
 // Account addresses and private keys
 exports.addresses = {

@@ -17,7 +17,7 @@ const wallet = new ethers.Wallet(privateKey, provider);
 
     const tokenContract = new ethers.Contract(tokenAddress, tokenABI, wallet);
 
-    const transferAmount = ethers.BigNumber.from("100000000000000"); // Ganti dengan jumlah token yang ingin Anda transfer (dalam satuan uint256)
+    const transferAmount = ethers.BigNumber.from("100000000000"); // Ganti dengan jumlah token yang ingin Anda transfer (dalam satuan uint256)
 
     const iterations = 1000; // Tentukan jumlah pengulangan untuk melakukan transaksi berulang
 
@@ -33,8 +33,8 @@ const wallet = new ethers.Wallet(privateKey, provider);
           transferCounter++; // Tambahkan counter setiap kali transfer berhasil
           console.log(`Transfer Berhasil ke ${toAddress}. Tx => [${transaction.hash}] - Nomor Urut: ${transferCounter}`);
 
-          // Menambahkan jeda 5 detik
-          await new Promise((resolve) => setTimeout(resolve, 5000));
+          // Menambahkan jeda 30 detik
+          await new Promise((resolve) => setTimeout(resolve, 30000));
         } catch (innerErr) {
           // Hilangkan atau komentar baris berikut untuk menghilangkan log error
           // console.error(`Gagal transfer ke ${addresses[`W_${i + 2}`]}. Error: ${innerErr.message}`);
